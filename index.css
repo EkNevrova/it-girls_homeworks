@@ -1,0 +1,11 @@
+.hiddenOff {
+    visibility: hidden;
+}
+
+.hiddenOn {
+    visibility: visible;
+}
+
+img {
+    width: 100px;
+}
