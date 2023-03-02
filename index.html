@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2 class="alert alert-primary" role="alert">Планировщик задач</h2>
+    <h3 class="blue">Добавить задачу</h3>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Задача" aria-label="Задача"
+            aria-describedby="button-addon2" id="task">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+            onclick="pushTask()">Добавить</button>
+    </div>
+    <h2 class="green">Список задач</h2>
+    <ul class="list-group">
+        <p id="fieldTask">Нет задач</p>
+    </ul>
+    <button type="button" class="btn btn-outline-secondary" id="clear" disabled onclick="clearTasks()">Очистить список
+        задач</button>
+
+    <br />
+    <br />
+    <br />
+    <div class="alert alert-warning" role="alert">
+        Задание со звёздочкой ***
+    </div>
+    <label for="inputNumber">Введите целое число:</label>
+    <input type="text" id="inputNumber" name="inputNumber" value="10" onchange="numberProgram()">
+    <p>Введённое число состоит из цифр: </p>
+    <span id="numerals"></span>
+    <p>- количество цифр: </p>
+    <span id="numeralsNumber"></span>
+    <p>- сумма из цифр: </p>
+    <span id="numeralsSum"></span>
+    <p>- обратный порядок цифр: </p>
+    <span id="numeralsReverse"></span>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
